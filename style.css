@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     color: #000;
     background: #fff;
@@ -78,7 +84,7 @@ body {
 }
 
 .pagina-inicial {
-    margin-top: 180px;
+    margin-top: 152px;
 }
 
 .carrosel {
@@ -148,7 +154,7 @@ body {
 }
 
 .overlap p {
-    margin-top: 0;
+    margin-top: 15px;
 }
 
 .indicadores {
@@ -173,3 +179,59 @@ body {
     background: white;
 }
 
+.colecoes h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-bottom: 2px dotted #000;
+    width: 50%;
+    transform: translateX(50%);
+    padding-bottom: 10px;
+}
+
+.placeholder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.placeholder img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid #000;
+    transition: box-shadow 0.6s ease, border-color 0.6s ease;
+}
+
+.placeholder img:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.placeholder h3 {
+    font-weight: 600;
+}
+
+.placeholder p {
+    margin: 0 100px 150px 100px;
+
+}
+
+.rodape {
+    background: #000;
+    width: 100%;
+    display: flex;
+    height: 100px;
+    color: #fff;
+}
+
+.direitos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
